@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*Reset default values*/  
+}
+
+h5{
+    color: #FFFFFF;
+}
+body{
+    font-family: 'Times New Roman', Times, serif;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden; /*prevents scrolling*/
+}
+
+/*Styling Header*/
+.first-container{
+    display: flex;
+    background-color: #FFCD9E;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 15px; 
+    width: 100%;
+    flex-shrink: 0;
+}
+.first{
+    align-content:center;
+    padding: 5px;
+    max-width: 100%;
+}
+.second{
+    text-align: center;
+    padding: 5px;
+    max-width: 100%;
+} 
+/*Styling Footer*/
+.second-container{
+    display: flex;
+    background-color: black;
+    color: #FFFFFF;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 15px; 
+    width: 100%;
+    flex-shrink: 0;  
+}
+
+ul{
+    list-style-type: none;  
+    padding: 0;
+    margin: 0;
+}
+ui.third{
+    text-align: left;
+}
+ul.fourth{
+    text-align: right; 
+}
+.empty {
+    content: "";
+    display: block;
+    height: 0.5em; /*Give the height to see space*/
+}
+input[type="email"]{
+    border-radius: 2px solid;
+    padding: 8px;
+    margin-right: 8px; /*space b/w two buttons*/
+}
+button{
+    background-origin: padding-box;
+    background-color: black;
+    color: #FFFFFF;
+    border-radius: 2px;
+    padding: 8px;
+    
+}
+
+@media (max-width: 600px) {
+    .first-container, .second-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    ul.third, ul.fourth {
+        text-align: center;
+    }
+}
